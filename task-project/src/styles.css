@@ -1,0 +1,480 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@angular/material/prebuilt-themes/purple-green.css';
+
+.mat-mdc-dialog-container  .mat-mdc-dialog-surface {
+  background: white !important;
+}
+.menu-bar-thick {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .menu-bar-thick h2 {
+    margin: 0;
+  }
+  
+  .profile-button,
+  .logout-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  .profile-button:hover,
+  .logout-button:hover {
+    background-color: white;
+    color: #4CAF50; /* Green */
+  }
+  
+  /* Style for the left and right content of the menu bar */
+  .left-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the main container */
+  .container {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 60px); /* Subtract the height of the menu bar */
+  }
+  
+  /* Style for the left panel */
+  .left-panel {
+    flex: 1;
+    background-color: #01796F; /* Light whitish green */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-panel img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-message {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ddd;
+  }
+  
+  /* Style for the middle panel */
+  .middle-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #D0F0C0; /* Light whitish blue on background */
+    padding: 20px;
+    position: relative;
+  }
+  
+  .upper-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upper-panel img {
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .lower-panel {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    background-color: #D0F0C0;
+    position: relative;
+  }
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+  .button-text {
+    margin-top: 10px;
+  }
+  
+  .menu-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Display buttons in a column */
+    position: relative; /* Add this to make the right panel a reference for absolute positioning */
+  }
+  
+  .image-before-right {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-before-right img {
+    width: 180px; /* Adjust the image width as needed */
+    height: 180px; /* Adjust the image height as needed */
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Semi-transparent white background */
+    display: flex;
+    opacity: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /* Add some spacing between buttons and the form */
+    width: 56%;
+    margin: 0 auto;
+    margin-top: 46px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 43px;
+  }
+  h6{
+    font-size: 13px;
+  }
+  .cancel-button {
+    background-color: #2e608b; /* Red */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .cancel-button:hover {
+    background-color: #af8181; /* Darker red */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  .submit-button {
+    background-color: #2e608b; /* Green */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #af8181; /* Darker green */
+  }
+  
+   h6{
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  h5{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    top:30px
+  }
+  /* Styles for the accepted cards image */
+  .user-form img  {
+    width: 140px; /* You can adjust the width as needed */
+    height: auto;
+    margin-right: 25px;
+  }
+  
+  
+  /* Styles for the form rows */
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for the form items */
+  .form-item {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  /* Styles for the labels */
+  label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles for the input fields */
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Add a border around the input fields */
+    border-radius: 5px;
+  }
+  
+  /* Styles for the submit button */
+  .submit-button {
+    background-color: #2e608b; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 55px;
+  }
+  
+  .submit-button:hover {
+    background-color: #4b85b5; /* Darker green on hover */
+  }
+  
+  /* Styles for the cancel button */
+  .cancel-button {
+    background-color: #af8181; /* Red */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 55px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d19494; /* Darker red on hover */
+  }
+  .transaction-history-box {
+   max-height: 250px;
+   overflow: auto;
+    border: 1px solid #ccc; /* Optional: Add a border around the box */
+    padding: 8px; /* Optional: Add some padding to the box */
+    margin-top: 10px;
+  }
+ 
+  
+  .transaction-history-table {
+    width: 100%; /* Optional: Adjust the table width as needed */
+  }
+  
+  /* Optional: Style the table header */
+  .transaction-history-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  .transaction-history-box button{
+    margin-top: 50px;
+  }
+  
+  /* Optional: Style the table rows */
+  .transaction-history-table tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Optional: Style the table cells */
+  .transaction-history-table td {
+    padding: 8px;
+  }
+  
+  /* Add your other styles here */
+  
+  .overlay3 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .user-form3 {
+    width: 500px;
+    text-align: left;
+    padding: 40px;
+  }
+  
+  .user-form3 h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .user-form3 label {
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .user-form3 p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .user-form3 .cancel-button {
+    margin-top: 30px;
+    width: 120px;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .profile-bar {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+  }
+  
+  .edit-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #5bc0de;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .edit-input {
+    width: 200px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .cancel-edit-button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+  }
+  
+  .cancel-button1 {
+    margin-top: 30px;
+    width: 150px;
+    padding: 12px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  html body {
+    background: #f1f4e9;
+  }
+
+
+  table {
+    border-collapse: collapse;
+      font-family: Tahoma, Geneva, sans-serif;
+  }
+  table td {
+    padding: 15px;
+  }
+  table thead td {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #54585d;
+  }
+  table tbody td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+  }
+  table tbody tr {
+    background-color: #f9fafb;
+  }
+  table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }

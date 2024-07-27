@@ -1,0 +1,38 @@
+
+    
+     <div class="center">
+        <div class="contact-info">
+            <h2>Contact us</h2>
+            <p>We're open for any suggestion or just to have a chat</p>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Address: 2-1-107 , Gachibowli ,Hyderabad
+              </li>
+              <li>
+                <i class="fas fa-phone"></i> Phone: 6304626261
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i> Email: taskmanagegmail.com
+              </li>
+              <li>
+                <i class="fas fa-globe"></i> Website: taskmanage.com
+              </li>
+            </ul>
+          </div>
+        </div>
+   <div class="center">
+    <div class="login-form">
+        <h2>Your Information</h2>
+        <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+            <input type="text" id="name" name="name" placeholder="Name" ngModel required>
+            <input type="email" id="email" name="email" placeholder="Email" ngModel required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" ngModel required>
+            <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+        </form>
+    </div>
+    </div>
+  
+    
+    <footer class="footer">
+        <p>&copy; 2024 Task Management System. All rights reserved.</p>
+    </footer>

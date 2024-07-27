@@ -1,0 +1,12 @@
+<div class="main">
+    <div class="left">
+        <app-appheader *ngIf="!isLoggedIn && !isAdminLoggedIn"></app-appheader>
+        <app-clientheader  *ngIf="isLoggedIn && !isAdminLoggedIn"></app-clientheader>
+        <app-adminheader *ngIf="!isLoggedIn && isAdminLoggedIn"></app-adminheader>
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+

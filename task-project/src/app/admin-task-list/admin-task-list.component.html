@@ -1,0 +1,47 @@
+
+<div>
+    <div class="search-bar">
+        <input type="text" [(ngModel)]="searchText" (input)="onSearchInput($event)" placeholder="Search Task">
+      </div>
+    
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Task Create Date</th>
+            <th>Task End Date</th>
+            <th>Priority</th>
+            <th>Create Date</th>
+            <th>Update Date</th>
+            <th>Complete Date</th>
+            <th>isComplete</th>
+            <th>Status</th>
+            
+            <th>Add User</th>
+        </tr>
+        <tr *ngFor="let task of allTask" [class.is-deadline]="isDeadlineDate(task?.deadlineDate)">
+            <td>{{task.id}}</td> 
+            <td>{{task.name}}</td>
+            <td>{{task.description}}</td>
+            <td>{{getFormatedDate(task.date)}}</td>
+            <td>{{getFormatedDate(task.deadlineDate)}}</td>
+            <td><span class="priority">{{task.priority}}</span></td>
+            <td>{{getFormatedDate(task.createDate)}}</td>
+            <td>{{getFormatedDate(task.updateDate)}}</td>
+            <td>{{getFormatedDate(task.completeDate)}}</td>
+            <td [class.is-complete]="!task?.completed"><mat-progress-bar mode="determinate" value="100" color="error"></mat-progress-bar>        </td>
+            <td *ngIf="task.owner.id.toString() === this.uId.toString()">
+                <button mat-fab (click)="addUserToTask(task)" >
+                    <mat-icon>add</mat-icon>
+                  </button>&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+                {{task?.taskStatus === 'delete' ? 'Deleted' : ''}}
+            </td>
+            <td *ngIf="task.owner.id.toString() !== this.uId.toString()">
+                {{task.owner.firstName}} {{task.owner.lastName}}
+            </td>
+        </tr>
+    </table>
+</div>

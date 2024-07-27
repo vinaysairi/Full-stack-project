@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/last.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 10px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.login-box {
+  width: 100%;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer; /* Ensures the cursor changes to pointer */
+}
+
+.submit-button {
+  background-color: #cac307;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+
+.back-button:enabled {
+  background-color: #555;
+  color: rgb(199, 199, 7);
+}
+
+.btn-block:hover {
+  opacity: 0.9;
+  cursor: pointer; /* Ensures the cursor changes to pointer on hover */
+}
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #e5c655;
+  color: #070707;
+  position: fixed;
+  width: 80%;
+  bottom: 0;
+  font-size: 20px;
+}

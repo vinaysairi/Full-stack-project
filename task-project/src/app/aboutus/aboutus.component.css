@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+img {
+    height: calc(100vh - 76px);
+    width: 100%;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    background-image: radial-gradient(circle 759px at -6.7% 50%, rgb(184, 187, 32) 0%, rgb(203, 206, 0) 26.2%, rgb(204, 211, 0) 50.6%, rgba(208, 212, 60, 1) 74.1%, rgba(202, 205, 56, 1) 100.3%);
+    padding: 15px;
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Main Section Styles */
+.main {
+    background: url("../../assets/about\ us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+    color: white;
+    text-align: center;
+}
+
+.product-info h2 {
+    color: rgb(189, 206, 38);
+    padding: 58px;
+    font-size: 48px;
+}
+
+/* Boxes Section Styles */
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-box {
+    color: black;
+    background: rgb(196, 179, 1);
+    height: 200px;
+    width: 250px;
+    transition: margin-top 750ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-box:hover,
+.product-box.box:focus {
+    margin-top: 20px;
+}
+
+.mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin: 5px;
+}
+
+.boxes h5 {
+    margin-top: 13px;
+    font-size: 24px;
+    padding: 21px;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e5c655;
+    color: #070707;
+    position: fixed;
+    width: 80%;
+    bottom: 0;
+    font-size: 20px;
+}

@@ -1,0 +1,45 @@
+.background-image {
+  background-image: url('../../../assets/listtask.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(248, 228, 4, 0.8); /* semi-transparent background for table */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1d304;
+}
+
+th {
+  background-color: #ccaa00;
+}
+
+tr:hover {
+  background-color: #e1d304;
+}
+
+.priority {
+  font-weight: bold;
+}
+
+button mat-fab {
+  background-color: #3f51b5;
+  color: rgb(227, 204, 0);
+}
+
+button mat-fab mat-icon {
+  color: white;
+}

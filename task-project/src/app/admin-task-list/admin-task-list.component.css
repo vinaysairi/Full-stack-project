@@ -1,0 +1,48 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 30px;
+    background-color: rgb(64, 158, 126);
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    word-spacing: 5px;
+    
+  }
+  
+  tr:nth-child(even){background-color: #39979f}
+  
+  th {
+    background-color: #cada17;
+    color: rgb(30, 29, 29);
+  }
+
+  .is-complete .mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-color: rgb(233, 216, 23) !important;
+  }
+  .mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-color: rgb(222, 232, 25) !important;
+  }
+  button {
+    height: 36px;
+    width: 36px;
+  }
+  td span.priority {
+    background: rgb(205, 200, 40);
+    padding:7px;
+    border-radius: 12px;
+  }
+  .search-bar {
+    height: 30%;
+    width: 50%;
+    padding: 30px;
+    margin-left: 25%;
+  }
+
+  .is-deadline {
+    background: red !important;
+  }

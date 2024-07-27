@@ -1,0 +1,28 @@
+<div class="main">
+  <div class="profile-form">
+    <div class="profile-header">
+      <h1>Your Profile</h1>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <td><b>First Name</b></td>
+          <td>{{ user.firstName }}</td>
+        </tr>
+        <tr>
+          <td><b>Last Name</b></td>
+          <td>{{ user.lastName }}</td>
+        </tr>
+        <tr>
+          <td><b>Email</b></td>
+          <td>{{ user.email }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="center-align">
+      <button class="submit-button" (click)="openProfileDialog()">Update</button>
+    </div>
+  </div>
+</div>

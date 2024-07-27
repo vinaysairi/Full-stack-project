@@ -1,0 +1,24 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-image: radial-gradient(circle 759px at -6.7% 50%, rgb(184, 187, 32) 0%, rgb(203, 206, 0) 26.2%, rgb(204, 211, 0) 50.6%, rgba(208, 212, 60, 1) 74.1%, rgba(202, 205, 56, 1) 100.3%);
+
+    
+}
+.heading .mat-icon{
+    cursor: pointer;
+}
+
+.profile-update-div {
+    display: flex;
+    justify-content: center;
+}
+.center-div {
+    text-align: center;
+    margin-top: 20px;
+}
+table  {
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+}

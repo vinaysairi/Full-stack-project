@@ -1,0 +1,20 @@
+<div class="main">
+    
+        <div (click)="gotourl('home')" [class.selected]="url === '/home'">
+            <i class="fas fa-home"></i> Home
+        </div>
+        <div (click)="gotourl('aboutus')" [class.selected]="url === '/aboutus'">
+            <i class="fas fa-info-circle"></i> About Us
+        </div>
+        <div (click)="gotourl('contact')" [class.selected]="url === '/contact'">
+            <i class="fas fa-envelope"></i> Contact Us
+        </div>
+        <div (click)="gotourl('login')" [class.selected]="url === '/login'">
+            <i class="fas fa-sign-in-alt"></i> User Login
+        </div>
+
+    
+</div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

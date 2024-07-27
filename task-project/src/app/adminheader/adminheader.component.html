@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="profile" >
+        <div class="icon-item">
+            <mat-icon >account_circle</mat-icon>
+        </div>
+        <div class="uname">{{userName}}</div>
+    </div>
+    <div (click)="gotourl('adminDashboard')" [class.selected]="url === '/adminDashboard'"> <mat-icon class="mat">home</mat-icon>&nbsp;&nbsp;<span>Home</span></div>
+    <div (click)="gotourl('register')" [class.selected]="url === '/register'">  <mat-icon class="mat">person_add</mat-icon>&nbsp;&nbsp;
+        <span>Add User</span>
+</div>
+    <div (click)="gotourl('admin-listtask')" [class.selected]="url === '/admin-listtask'">   <mat-icon class="mat">list</mat-icon>&nbsp;&nbsp;
+        <span>List Task</span>
+</div>
+    <div (click)="gotourl('addtask')" [class.selected]="url === '/addtask'"> <mat-icon class="mat">add</mat-icon>&nbsp;&nbsp;
+        <span>Add Task</span>
+</div>
+    <div (click)="gotourl('logout')" [class.selected]="url === '/logout'"><mat-icon class="mat">logout</mat-icon>&nbsp;&nbsp;
+        <span>Logout</span>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
